@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/recent.css' %}">
+    <title>Recent Product</title>
+    
+  </head>
+  <body>
+    <form action="" method="POST" novalidate>
+      {% csrf_token %}
+
+	{{form.as_p}}
+
+    <input type="submit" value='submit'>
+    </form>
+    <hr>
+    
+
+
+  </body>
+</html>
+
